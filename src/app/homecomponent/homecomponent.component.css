@@ -1,0 +1,40 @@
+
+input.ng-pristine{
+border:  double 5px red;
+}
+input.ng-dirty{
+
+    border: dashed 5px gray;
+}
+
+input.ng-valid{
+    border: green solid 4px;
+}
+input.ng-invalid{
+    border: rgb(24, 21, 15) solid 4px;
+}
+
+.myColor{
+    color: red;
+}
+.addhouse{
+width: inherit;
+height: 350px;
+padding: 10px;
+text-align: right;
+margin-top: 50px;
+
+}
+input{
+    width: 350px;
+
+}
+caption{
+    align-content: center;
+}
+thead{
+    background-color: lightslategray;
+}
+section{
+    margin-top: 20px;
+}
