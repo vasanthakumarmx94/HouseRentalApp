@@ -127,15 +127,17 @@ export class HomecomponentComponent implements OnInit {
   advance1:number;
   rent1:number
   descr1:string;
-  editButtonClick(el:any){
+  editButtonClick(edithno:any){
+    var house=this.listData.find(val=>val.Hno == edithno);
+    this.hno1=house.hno;
+    this.address1=house.address;
+    this.ownername1=house.owname;
+    this.mobile1=house.mobile;
+    this.advance1=house.advance;
+    this.rent1=house.rent;
+    this.descr1=house.descr;
+    console.log(house.hno);
     
-    this.listData.forEach((value,index)=> {
-      if(value==el){
-        this.hno1=value['hno'];
-        this.address1=value[''];
-        console.log(value);
-      }
-    });
   }
   cancel(){
 
